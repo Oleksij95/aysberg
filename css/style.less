@@ -1,0 +1,1387 @@
+
+.overflow{
+	overflow: hidden;
+}
+
+.particles-js-canvas-el{
+	position: absolute;
+}
+
+canvas#canvas{
+	position: absolute;
+	width: 100%;
+}
+
+.loaderArea{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: #fff;
+	z-index: 1000;
+	text-align: center;
+	vertical-align: middle;
+	/*background-image: url('../img/petal1.png'), url('../img/petal3.png'), url('../img/petal4.png');
+	background-repeat: no-repeat;
+	-webkit-animation: snow_preload_geader 5s linear infinite;
+	-moz-animation: snow_preload_geader 5s linear infinite;
+	-ms-animation: snow_preload_geader 5s linear infinite;
+	animation: snow_preload_geader 5s linear infinite;*/
+	img{
+		max-width: 20%;
+		margin-top: 20%;
+	}
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+
+header{
+
+	
+	background-position: top;
+	min-height: 80vh;
+	padding-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+	background: url("../img/landscape711.png");
+	background-size: cover;
+	.header-bgp-gradient{
+		position: absolute;
+		height: 500px;
+		width: 100%;
+		background: url("../img/background-header-gradient.png") repeat content-box;
+		background-size: contain;
+		z-index: -1;
+	}
+	.parallax{
+		position: absolute;
+	    width: 120%;
+	    min-height: 1000px;	   
+	    background-size: contain;
+	    top: -17px;
+	    left: -10px;
+	    transition: all 1s;
+	    margin-top: 0;
+	}
+	.back_call{
+		z-index: 1;
+		&:hover{ 
+			cursor: pointer;
+		}
+	}
+
+
+
+	nav{
+		background-color: rgba(20, 147, 224, .6);
+		padding: 15px 0 15px 0;
+		max-height: 60px;
+		position: absolute;
+		z-index: 15;
+		width: 100%;
+		img.logo{
+			max-width: 125px;
+		}
+		span{
+			color: #fff;
+		}
+		.callback{
+			margin-top: -3px;
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+			span.nav_callback{
+				margin-right: 10px;
+				font-size: 26px;
+				float: left;
+			}
+			p{
+				font-size: 12px;
+				line-height: 12px;
+				margin-top: 8px;
+			}
+		}
+		.callmy{
+			span{
+				font-size: 17px;
+			    margin-top: 7px;
+			    display: block;
+			    i{
+			    	margin-right: 10px;
+			    }
+			}
+		}
+		.hamburger.hamburger--collapse{
+			margin-top: 4px;
+		}
+	}
+
+	.header_content{
+		padding-top: 50px;
+		.col-md-1{
+			margin-top: 43%;
+			z-index: 1;
+			.img291m{
+				margin-left: 127px;
+			    max-width: 75px;
+			    min-width: 75px;
+			}
+		}
+		.col-md-6.col-sm-6{
+			margin-top: 74px;
+		}
+		img.header_water_img{
+			max-width: 100%;
+		}
+		img.ButPopUp{
+			display: none;
+		}
+		.water_deck_title{
+			margin-top: 15%;
+			margin-left: -50px;
+			text-align: right;
+			margin-left: -90px;
+			img.logo_blue{
+				max-width: 100%;
+				margin-bottom: 10px;
+				margin-left: 30px;
+			}
+			button.Order_water{
+				color: #fff;
+				border: none;
+				background-color: #3eb5f1;
+				padding: 15px 65px;
+				font-size: 23px;
+				margin-top: 20px;
+			}
+			p{
+				margin-bottom: 20px;
+				color: #194e9b;
+				font-size: 22px;
+				margin-top: 14px;
+				text-align: center;
+				padding-left: 85px;
+			}
+		}
+	}
+	.header_full_description_water{
+		margin-top: 40px;
+		p{
+			color: #474747;
+			font-size: 15px;
+			margin: 0;
+			line-height: 27px;
+			padding-left: 15px;
+		}
+
+	}
+}
+
+
+section#Chemical_Warehouse{
+	background-image: url("../img/sea.jpg");
+	background-size: cover;
+	background-position: top;
+	padding-top: 120px;
+	padding-bottom: 40px;
+	padding-bottom: 100px;
+	position: relative;
+	h1{
+		color: #164d93;
+	}
+
+	.meleculy_info{
+		margin-top: 100px;
+	}
+
+	.molecula{
+		background-image: url("../img/romb.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		line-height: 150px;
+		font-size: 23px;
+		/*padding-left: 10px;*/
+		color: #194e9b;
+		transition: all .3s;
+		/*position: absolute;*/
+		sub{
+			margin-left: -15px;
+    		font-size: 11px;
+		}
+		sup{
+			font-size: 11px;
+		    margin-left: -5px;
+		    margin-right: 5px;
+		    top: -15px;
+		}
+	}
+	.col-md-2.col-md-offset-3{
+		top: 130px;
+		left: -67px;
+		.molecula{
+			&:nth-child(2){
+				margin-left: -70px;
+			}
+			
+		}
+	}
+
+	.right_molecul{
+		margin-left: -20px;
+		top: 130px;
+		left: -67px;
+		.molecula{
+			&:nth-child(2){
+				margin-left: 70px;
+			}
+			
+		}
+	}
+
+	p.chemical_signature{
+		font-size: 19px;
+		color: #fff;
+		margin-top: 70px;
+		padding-left: 350px;
+	}
+}
+.section3{
+	height: 1328px;
+}
+section#Stages_of_cleaning{
+	background-image: url("../img/filters.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*max-height: 1080px;*/
+	position: relative;
+	/*padding-top: 120px;*/
+	border-top: 3px solid #94d6f5;
+	h1{
+		color:#fff;
+		margin-bottom: 80px;
+		margin-top: 100px;
+	}
+	img{
+		z-index: 1;
+	}
+	.show_mobile{
+		display: none;
+		list-style: none;
+		padding: 0;
+		p.title_li{
+			font-size: 20px;
+    		color: #fff;
+    		line-height: 24px;
+		}
+		li{
+			.title_li, .filter_deck{
+				margin-left: 85px;
+			}
+			&:before{
+				width: 70px;
+			    height: 70px;
+			    content: '';
+			    display: inline-block;
+			    position: absolute;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;
+			    background-size: cover;
+			}
+			&:nth-child(2):before{
+				background-image: url(../img/1.png);
+				background-color: red;
+			}
+		}
+	}
+
+    .show_mobile li:nth-child(3):before {
+        background-image: url(../img/2.png)
+    }
+    .show_mobile li:nth-child(4):before {
+        background-image: url(../img/3.png)
+    }
+    .show_mobile li:nth-child(5):before {
+        background-image: url(../img/4.png)
+    }
+    .show_mobile li:nth-child(6):before {
+        background-image: url(../img/5.png)
+    }
+    .show_mobile li:nth-child(7):before {
+        background-image: url(../img/6.png)
+    }
+    .show_mobile li:nth-child(8):before {
+        background-image: url(../img/7.png)
+    }
+
+    .show_mobile .line_step_ul {
+	    position: absolute;
+	    width: 3px;
+	    height: 94%;
+	    border: none;
+	    background-color: #fff;
+	    left: 49px;
+	}
+
+	.punkt1, .img_filter{
+		width: 80px !important;
+		height: 80px !important;
+	}
+
+
+	.filter_title{
+		color: #fff;
+		font-size: 27px;
+		font-weight: 100;
+	}
+	.filter_deck{
+		color: #fff;
+	}
+
+	.mechanical_filter{
+		position: absolute;
+		left: 185px;
+		top: 20px;
+	}
+
+	.mechanical_filter_deck{
+		position: absolute;
+		left: 580px;
+		top: 45px;
+	}
+	.mechanical_filter_deck{
+		p{
+			line-height: 23px;
+			color: #fff;
+		}
+	}
+	.coalfilter_deck{
+		position: absolute;
+		right: -80px;
+		top: 127px;
+		opacity: 0;
+		transition: all .9s;
+		transition-delay: 0.3s;
+		.filter_deck{
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+
+	.multimedia_filter{
+		position: absolute;
+		left: 300px;
+		top: 253px;
+		opacity: 0;
+		transition-delay: 1.9s;
+	}
+	.img_filter_3{
+		position: absolute;
+		top: 280px;
+		left: 190px;
+		opacity: 0;
+		transition-delay: 1.7s;
+	}
+	.multimedia_filter_deck{
+		position: absolute;
+		left: -50px;
+    	top: 294px;
+		opacity: 0;
+		transition-delay: 1.9s;
+	}
+
+	.osmos_filter{
+		position: absolute;
+		left: 540px;
+    	top: 371px;
+		opacity: 0;
+	}
+
+	.img_filter_osmos{
+		position: absolute;
+		top: 398px;
+    	right: 126px;
+		opacity: 0;
+	}
+
+	.osmos_filter_deck{
+		position: absolute;
+	    right: -136px;
+	    top: 390px;
+	    opacity: 0;
+	    transition: all .9s;
+	    transition-delay: .3s;
+	}
+
+	.kypage_filter{
+		position: absolute;
+	    left: 300px;
+	    top: 487px;
+	    opacity: 0;
+	}
+
+	.img_filter_kypage{
+		position: absolute;
+	    top: 517px;
+	    left: 190px;
+	    opacity: 0;
+	}
+
+	.kypage_filter_deck{
+		position: absolute;
+	    left: -50px;
+	    top: 531px;
+	    opacity: 0;
+	}
+
+	.ultraviolet_filter{
+		position: absolute;
+	    top: 614px;
+	    left: 470px;
+		opacity: 0;
+	}
+
+	.img_filter_4{
+		position: absolute;
+	    top: 633px;
+	    right: 126px;
+	    opacity: 0;
+	}
+	
+	.ultraviolet_filter_deck{
+		position: absolute;
+		top: 629px;
+		right: -100px;
+		opacity: 0;
+	}
+
+	.ozone_filter{
+		position: absolute;
+	    top: 760px;
+	    left: 160px;
+	    opacity: 0;
+	}
+	.img_filter_ozone{
+		position: absolute;
+		top: 752px;
+    	left: 356px;
+    	opacity: 0;
+	}
+	.ozone_filter_deck{
+		position: absolute;
+		top: 749px;
+		left: -50px;
+		opacity: 0;
+	}
+}
+
+
+section#price{
+	background-image: url(../img/snow.jpg);
+    background-size: contain;
+    background-position: 0 304px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+	
+	h1{
+		margin-bottom: 40px;
+		color: #164d93;
+	}
+	sup{
+		margin-left: -5px;
+    	font-size: 18px;
+    	margin-right: 6px;
+	}
+	
+	.show_product{
+		display: none;
+	}
+	.product{
+			width: 100%;
+			background-color: #fff;
+			box-shadow: 0 0 25px 0 #58a6cc;
+			text-align: center;
+			color: #0c4a5d;
+			
+			margin-bottom: 20px;
+			
+			
+			.product-header{
+				border-bottom: 10px solid transparent;
+				background-color: #3eb5f1;
+				padding: 15px 50px 0 50px;
+    			text-align: right;
+				.price_title_water{
+					max-width: 100%;
+					margin: auto;
+					margin-bottom: 10px;
+				}
+			}
+
+			.product_body{
+				background-size: contain;
+				background-repeat: no-repeat;
+				padding-bottom: 30px;
+				padding-top: 25px;
+			}
+			p.product_name{
+				font-size: 18px;
+				line-height: 27px;
+				margin: 0;
+				color: #fff;
+			}
+			i.fa{
+				user-select: none;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+
+			i.fa-minus{
+				margin-right: 0;
+				margin-left: 15px;
+			}
+			i.fa-plus{
+				margin-left: 0;
+				margin-right: 15px;
+			}
+			p.number_of_bottles{
+				display: inline;
+				user-select: none;
+			}
+			input.number_of_bottles_value{
+				width: 35px;
+				text-align: center;
+				background-color: transparent;
+				border: none;
+				user-select: none;
+			}
+			p.product_price{
+				font-size: 26px;
+			}
+			p.Saving{
+				margin-top: 30px;
+				margin-bottom: 10px;
+				color: #829aa3;
+			}
+
+			button{
+				background-color: #3eb5f1;
+				border: none;
+				color: #fff;
+				width: 77%;
+				font-size: 22px;
+			}
+	}
+}
+
+footer{
+	background-color: #5ab3e9;
+	padding: 10px 0;
+	a{
+		color: #fff;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	i{
+		margin-right: 10px;
+	}
+}
+
+footer{
+	.container{
+		padding-top: 10px;
+		.tl{
+			text-align: left;
+		}
+		a{
+			text-align: left;
+			display: inline-flex;
+			text-decoration: none;
+		}
+		a.shop{
+			font-size: 28px;
+			color: #fff;
+			line-height: 19px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		
+		i.fa-phone{
+			font-size: 22px;
+			margin-right: 5px;
+			color: #fff;
+			display: inline;
+		}
+		
+		i.fa-mobile{
+			font-size: 25px;
+			margin-right: 5px;
+			color: #fff;
+			display: inline;
+		}
+	}
+}
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+.curtains{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.53);
+	z-index: 1;
+}
+
+.popup{
+	width: 90%;
+	max-width: 750px;
+	background-color: blue;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 140px auto;
+	padding: 30px;
+	/*border-radius: 20px;*/
+	background: #f7fdff;
+	background: -moz-linear-gradient(top, #fff 0%, #9ee8fa  198%);
+	background: -webkit-linear-gradient(top, #fff 0%,#9ee8fa  198%);
+	background: linear-gradient(to bottom, #fff 0%,#9ee8fa  198%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fdff', endColorstr='#9ee8fa',GradientType=0 );
+	z-index: 100;
+	.close{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1;
+		i.fa{
+			font-size: 30px;
+			&:hover{
+				color: red;
+				cursor: pointer;
+			}
+		}
+	}
+	h4{
+		color: #1e7186;
+		font-size: 22px;
+	}
+	ul.contact{
+		list-style: none;
+		margin-left: 60px;
+		li{
+			margin-bottom: 30px;
+			position: relative;
+			&:first-child{
+				margin-top: 30px;
+			}
+			label{
+				display: block;
+				width: 81px;
+				position: absolute;
+				top: 7px;
+				left: -100px;
+				text-align: right;
+				font-size: 12px;
+			}
+		}
+	}
+	span.price_info{
+		font-size: 19px;
+		span{
+			color: #34a12c;
+			span.small_text{
+				font-size: 12px;
+			}
+		}
+	}
+	p.tooltip_p{
+		font-size: 12px;
+		margin: 0;
+	}
+	input.number_of_bottles_values{
+		margin-top: 20px;
+		width: 55px;
+		margin-left: 10px;
+		margin-right: 10px;
+		text-align: center;
+	}
+	input.contact_input,textarea.contact_input{
+		width: 300px;
+		height: 35px;
+		padding-left: 10px;
+	}
+	textarea.contact_input{
+		height: 100px;
+		min-height: 100px;
+		max-height: 100px;
+		max-width: 300px;
+		min-width: 300px;
+	}
+	p.min_number{
+		margin-left: 20%;
+		font-size: 13px;
+	}
+	button.sendpop_up{
+		padding: 10px 60px;
+		border: none;
+		color: #fff;
+		font-size: 20px;
+		background: #1493e0;
+		margin-left: 20%;
+		&:hover{
+			background-color: #2777ca;
+		}
+	}
+
+	img.img_popup{
+		max-width: 300px;
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 30px;
+	}
+}
+
+
+.callback_modal{
+	width: 90%;
+	max-width: 350px;
+	background-color: blue;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 60px auto;
+	padding: 30px;
+	/*border-radius: 20px;*/
+	background: #f7fdff;
+	background: -moz-linear-gradient(top, #fff 0%, #9ee8fa  198%);
+	background: -webkit-linear-gradient(top, #fff 0%,#9ee8fa  198%);
+	background: linear-gradient(to bottom, #fff 0%,#9ee8fa  198%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fdff', endColorstr='#9ee8fa',GradientType=0 );
+	z-index: 100;
+	.close{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1;
+		i.fa{
+			font-size: 30px;
+			&:hover{
+				color: red;
+				cursor: pointer;
+			}
+		}
+	}
+
+	h2{
+		text-align: center;
+		margin-bottom: 20px;
+		color: #1e7186;
+	}
+	input{
+		margin-bottom: 15px;
+		height: 45px;
+	}
+	button{
+		margin-top: 20px;
+		color: #fff;
+		background-color: #1493e0;
+		border: none;
+		padding: 10px 45px;
+		font-size: 21px;
+		box-shadow: 0 0 15px -1px #666669;
+	}
+}
+
+
+/*============    	АДАПТИВ    ===========*/
+
+
+@media(min-width:320px) and (max-width:480px) {
+
+	.loaderArea{
+		img{
+			max-width: 80%;
+		    margin: auto;
+		    margin-top: 50%;
+		}
+	}
+	.section3{
+		height: 1400px;
+	}
+	
+	header{
+		nav{
+			.callback{
+				display: none;
+			}
+			.callmy{
+				margin-left: 23px;
+				span{
+					margin-left: -10px;
+					font-size: 14px !important;
+				}
+			}
+			img.logo{
+				margin-left: -11px;
+				margin-top: 4px;
+				max-width: 95px;
+			}
+		}
+		
+		
+		.header_content{
+			.col-md-1{
+				margin-top: -33px;
+				.img291m{
+					display: none;
+				}
+			}
+			img.header_water_img{
+				display: none;
+			}
+			img.ButPopUp{
+				display: block;
+				margin: auto;
+				width: 100%;
+			}
+			.water_deck_title{
+				margin: 0;
+				text-align: center;
+				img.logo_blue{
+					margin: 0 auto;
+				}
+				p{
+					padding: 0;
+				}
+			}
+		}
+	}  
+
+	section#Chemical_Warehouse{
+		padding-top: 30px;
+		/*display: none;*/
+		img.img_molecyla{
+			display: none;
+		}
+		p.chemical_signature{
+			padding-left: 0;
+		}
+		.col-md-2.col-md-offset-5{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(1){
+					margin-left: Calc(100% - 150px);
+				}
+				&:nth-child(2){
+					margin-left: -15px;
+				}
+				&:nth-child(3){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+		.col-md-2.right_molecul{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(2){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+	}
+
+	section#Stages_of_cleaning{
+		#why-content{
+			display: none;
+		}
+		.show_mobile{
+			display: block;
+		}
+	}
+
+	section#price{
+		.product{
+			display: none;
+			.product-header{
+				text-align: center;
+			}
+		}
+		.show_product{
+			display: block;
+		}
+	}
+
+	footer{
+		.tl{
+			img{
+				max-width: 150px;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.callback_modal{
+		button{
+			width: 100%;
+			padding: 10px;
+		} 
+	}
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	.loaderArea{
+		img{
+			max-width: 60%;
+		    margin: auto;
+		    margin-top: 40%;
+		}
+	}
+	header{
+		.wrapper_geader_animation{
+			width: 100%;
+		}
+		.callback{
+			display: none;
+		}
+		.callmy{
+			margin-left: 23px;
+			span{
+				margin-left: -10px;
+				font-size: 14px !important;
+			}
+		}
+		img.logo{
+			margin-left: -11px;
+		}
+		.header_content{
+			.col-md-1{
+				margin-top: 0%;
+				.img291m{
+					display: none;
+				}
+			}
+			img.ButPopUp{
+				display: block;
+				width: 100%;
+				max-width: 450px;
+				margin: auto;
+			}
+			img.header_water_img{
+				display: none;
+				
+			}
+			.water_deck_title{
+				margin: 0;
+				text-align: center;
+				img.logo_blue{
+					max-width: 400px;
+					margin: 0 auto;
+				}
+				p{
+					padding: 0;
+				}
+			}
+		}
+	} 
+
+	section#price{
+		background: none;
+		.product{
+			display: none;
+		}
+		.show_product{
+			display: block;
+			.product-header{
+				text-align: center;
+				img{
+					max-width: 250px !important;
+				}
+			}
+		}
+	}
+ 
+
+	section#Chemical_Warehouse{
+		img.img_molecyla{
+			display: none;
+		}
+		.col-md-2.col-md-offset-5{
+			margin: auto;
+			max-width: 500px;
+			.molecula{
+				&:nth-child(1){
+					margin-left: Calc(100% - 150px);
+				}
+				&:nth-child(2){
+					margin-left: -15px;
+				}
+				&:nth-child(3){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+		.col-md-2.right_molecul{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(2){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+	}
+
+	section#Stages_of_cleaning{
+		#why-content{
+			display: none;
+		}
+		.show_mobile{
+			display: block;
+			li{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	footer{
+		.col-md-2.tl{
+			img.img-responsive{
+				max-width: 200px;
+    			margin: auto;
+			}
+		}
+	}
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	.loaderArea{
+		img{
+			max-width: 40%;
+		   
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		}
+	}
+	header{
+		.header_content{
+			.col-md-1{
+				.img291m{
+					max-width: 70px;
+					margin-left: 0;
+					margin-top: -40px;
+				}
+			}
+			.water_deck_title{
+				margin-top: 10%;
+				img.logo_blue{
+					max-width: 220px;
+				}
+			}
+		}
+	}
+	section#Stages_of_cleaning{
+		#why-content{
+			display: none;
+		}
+		.show_mobile{
+			display: block;
+		}
+	}
+
+	section#Chemical_Warehouse{
+		img.img_molecyla{
+			display: none;
+		}
+		.col-md-2.col-md-offset-5{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(1){
+					margin-left: Calc(100% - 150px);
+				}
+				&:nth-child(2){
+					margin-left: -15px;
+				}
+				&:nth-child(3){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+		.col-md-2.right_molecul{
+			max-width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(2){
+					margin-left: Calc(100% - 150px);
+				}
+			}
+		}
+	}
+
+	section#price{
+		background-position: 0 804px;
+	}
+
+	footer{
+		.col-md-2.tl{
+			margin-bottom: 20px;
+			img.img-responsive{
+				max-width: 200px;
+    			margin: auto;
+			}
+		}
+		.one_phone{
+			text-align: center;
+		}
+		.mobile_phone{
+			text-align: right;
+		}
+		.shop_wrap{
+			text-align: center;
+			a{
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.popup{
+	 	margin-top: 20px;
+	 	height: 95%;
+	 	overflow-y: scroll;
+	 }
+ .popup p.min_number{
+ 	margin-left: 0;
+ 	text-align: center;
+ }
+ .popup button.sendpop_up{
+ 	display: block;
+ 	margin: auto;
+ }
+ .popup img.img_popup{
+ 	display: none;
+ }
+ .popup input.contact_input, .popup textarea.contact_input{
+ 	width: 100%;
+ }
+ .popup textarea.contact_input{
+ 	min-width: 100px;
+ 	max-width: 100%;
+ }
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+	.popup{
+		margin-top: 20px;
+	}
+	.section3{
+		height: 1128px;
+	}
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+	.loaderArea{
+		img{
+			max-width: 30%;
+		    margin: auto;
+		    margin-top: 30%;
+		}
+	}
+	section#Stages_of_cleaning{
+		.show_mobile{
+			display: inherit;
+			li{
+				margin-bottom: 44px;
+				p{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+		#why-content{
+			display: none;
+		}
+		.coalfilter_deck{
+			right: -59px;
+		}
+	}
+	section#price{
+		background-size: cover;
+    	background-position: 0px 123px;
+	}
+	footer{
+		a{
+			font-size: 15px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px){
+	section#Chemical_Warehouse .right_molecul{
+		top: 80px;
+	}
+	section#Chemical_Warehouse .col-md-2.col-md-offset-3{
+		top: 65px;
+	}
+
+	section#Chemical_Warehouse .meleculy_info{
+		margin-top: 0;
+	}
+	section#Chemical_Warehouse .anion, section#Chemical_Warehouse .kation {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    max-width: 500px;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    margin: auto;
+	    left: 0 !important;
+	}
+
+	section#Chemical_Warehouse{
+		.anion{
+			.molecula{
+				&:nth-child(1){
+					margin-left: 40%;
+				}
+				&:nth-child(2){
+					margin-left: -120px !important;
+				}
+				&:nth-child(3){
+					margin-left: 40%;
+				}
+			}
+		}
+		.kation{
+			.molecula{
+				&:nth-child(1){
+					margin-left: -120px;
+				}
+				&:nth-child(2){
+					margin-left: 40% !important;
+				}
+				&:nth-child(3){
+					margin-left: -120px;
+				}
+			}
+		}
+	}  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	header{
+		.header_content{
+			.water_deck_title{
+				button.Order_water{
+					padding: 15px 55px;
+				}
+			}
+		}
+	}
+	section#Stages_of_cleaning{
+		ul.show_mobile{
+			li{
+				margin-bottom: 44px;
+				&:last-child{
+					margin-top: -20px;
+				}
+				p{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	section#Chemical_Warehouse{
+		.anion{
+			width: 500px;
+			margin: auto;
+			left: 0 !important;
+			.molecula{
+				&:nth-child(1){
+					margin-left:Calc(~"100% - 150px");
+				}
+				&:nth-child(2){
+					margin-left: 0 !important;
+				}
+				&:nth-child(3){
+					margin-left:Calc(~"100% - 150px");
+				}
+			}
+		}
+		.kation{
+			width: 500px;
+			margin: auto;
+			.molecula{
+				&:nth-child(1){
+					margin-left: 0;
+				}
+				&:nth-child(2){
+					margin-left:Calc(~"100% - 150px") !important;
+				}
+				&:nth-child(3){
+					margin-left: 0;
+				}
+			}
+		}
+	} 
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+	section#Stages_of_cleaning{
+		#why-content{
+			margin-left: 29px;
+		}
+		.osmos_filter_deck{
+			right: -116px;
+		}
+		.coalfilter_deck{
+			right: -63px;
+		}
+		.ultraviolet_filter_deck{
+			right: -80px;
+		}
+	}
+	section#price{
+		background-size: cover;
+    	background-position: 0px 123px;
+	}	
+}
+
+@media (min-width: 320px) and (max-width: 1600px) {
+	header{
+		background-image: url("../img/landscape.jpg");
+		background-size: inherit;
+		background-position: -2100px;
+	}
+	.parallax{
+		display: none;
+	}
+}
